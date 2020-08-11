@@ -83,10 +83,10 @@ function generatePassword() {
 
   for (let i = 0; i < pwdLength; i++) {
     let optionsArray = options[Math.floor(Math.random() * options.length)];
-    console.log(optionsArray.charAt(Math.floor(Math.random() * optionsArray.length)));
+    let passSelection = optionsArray.charAt(Math.floor(Math.random() * optionsArray.length)));
+    console.log(passSelection);
   }
 
-  document.getElementById("generate").innterHTML = options;
 }
 
 
