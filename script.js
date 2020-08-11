@@ -17,7 +17,8 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
 var lower = "abcdefghijklmnopqrstuvwxyz"
 var numeric = "0123456789"
 var special = "!@#$%^&*()"
-let options = [];
+var options = [];
+var text = "";
 
 // Length Requiements
 
@@ -83,11 +84,17 @@ function generatePassword() {
 
   for (let i = 0; i < pwdLength; i++) {
     let optionsArray = options[Math.floor(Math.random() * options.length)];
-    let passSelection = optionsArray.charAt(Math.floor(Math.random() * optionsArray.length)));
-    console.log(passSelection);
+    let passSelection = optionsArray.charAt(Math.floor(Math.random() * optionsArray.length));
+    text += passSelection;
   }
-writePassword();
+  console.log(text);
 }
 
+function writePassword() {
+  generatePassword();
+  var passwordText = document.querySelector("#password");
 
+  passwordText.textContent = text;
+}
 
+generateBtn.addEventListener("click", writePassword);
