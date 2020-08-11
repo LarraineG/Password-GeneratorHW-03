@@ -88,5 +88,6 @@ function generatePassword() {
   }
 
 }
+writePassword();
 
 
