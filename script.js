@@ -86,8 +86,8 @@ function generatePassword() {
     let passSelection = optionsArray.charAt(Math.floor(Math.random() * optionsArray.length)));
     console.log(passSelection);
   }
-
-}
 writePassword();
+}
+
 
 
