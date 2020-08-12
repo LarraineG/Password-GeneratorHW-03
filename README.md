@@ -11,8 +11,6 @@ This portfolio asignment help me to:
 - Get more comfortable with console.log
 
 
-** Here is the link to my Portfolio **
-
 [My Portfolio]https://larraineg.github.io/Password-GeneratorHW-03/
 
 **For questions or concerns:**
